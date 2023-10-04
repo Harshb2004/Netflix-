@@ -1,0 +1,282 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color:white;
+}
+.header{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("images/ba.jpg") ;
+    background-size: cover;
+    background-position: center;
+    padding:12px,10%;
+    
+    position: relative;
+
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    padding:10px,0;
+}
+
+.logo{
+    margin-top: 22px;
+    margin left:0px;
+    width: 9.25rem;
+    height: 2.5rem;
+    cursor:pointer;
+}
+nav button{
+    border:0;
+    outline:0;
+    background:#db0001;
+    color:#fff;
+    padding:7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-top: 22px;
+    margin-left: 10px;
+    cursor:pointer;
+}
+.lang {
+    display:inline-flex;
+    color:#fff;
+    align-items:center;
+    background: transparent;
+    border:1px solid white;
+    border-radius: 4px;
+    padding:7px 10px;
+
+}
+.lang img{
+    width:10px;
+    margin-left:10px;
+}
+.header-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.header-content h1{
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    max-width: 100%;
+}
+.header-content h3{
+    font-size: 25px;
+    font-weight: 250;
+    margin-bottom: 20px;
+}
+.header-content p{
+    font-size: 20px;
+}
+.email input{
+    border-radius: 4px;
+    border:1px solid red;
+    display: inline-flex;
+    height:60px;
+    width:60%;
+    padding: 3px;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 11%;
+    overflow:hidden;
+    font-size: 21px;
+    color:white;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+}
+.email button{
+    border-radius: 4px;
+    border:1px solid white;
+    height:60px;
+    width:28%;
+    font-size: 35px;
+    color:white;
+    align-items: center;
+    margin-left: 1px;
+    margin-top: 32px;
+    background:red;
+}
+hr{
+    width:100%;
+    height:5px;
+   
+    background-color: #303030;
+    border:0;
+}
+
+/*features*/
+.feature{
+    padding: 40px 12px;
+    font-size: 22px;
+}
+
+.row{
+    display:flex;
+    width:100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    width:60%;
+    
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display:block;
+    width:90%;
+    margin:auto;
+}
+.feature h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/*------------------- FAQ---------------*/
+
+.faq{
+    padding:10px 12%;
+    text-align: center;
+    font-size: 18px;
+    width:100%;
+}
+.faq h2{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.question{
+    margin: 60px 40px;
+    width:100%;
+   
+}
+
+.question li{
+    list-style: none;
+    width:100%;
+    padding: 5px;
+}
+
+.question li label{
+    display:flex;
+    align-items: center;
+    padding:20px;
+    font-size:25px;
+    font-weight:500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    height:5rem;
+}
+
+label::after{
+    content:"+";
+    font-size: 40px;
+    position: absolute;
+    right:20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+
+.question .content{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    font-size: 1.5rem;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.question input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+
+}
+.question input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.Email input{
+    border-radius: 4px;
+    border:1px solid red;
+    display: inline-flex;
+    height:60px;
+    width:60%;
+    padding: 3px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 11%;
+    overflow:hidden;
+    font-size: 21px;
+    color:white;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+}
+.Email button{
+    border-radius: 4px;
+    border:1px solid white;
+    height:60px;
+    width:28%;
+    margin-bottom: 30px;
+    font-size: 35px;
+    color:white;
+    align-items: center;
+    margin-left: 1px;
+    margin-top: 32px;
+    background:red;
+}
+
+.footer{
+    font-size: 15px;
+    padding:20px;
+    margin-top:4rem;
+    margin-left:8rem;
+}
+.footer p span{
+    text-decoration: underline;
+}
+
+.footer ul{
+    list-style: none;
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+.list {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.list>li{
+    margin-bottom: 1rem;
+    flex:1 1 33%;
+}
+
+.footer select{
+    border:1px solid white;
+    border-radius:4px ; 
+ 
+}
+p:last-child{
+    margin-top: 1.5rem;
+}
